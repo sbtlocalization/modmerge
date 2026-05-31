@@ -36,7 +36,10 @@ archives:
       {{- else }}{{ .Arch }}{{ end }}
       {{- if .Arm }}v{{ .Arm }}{{ end }}
 
-    wrap_in_directory: true
+    wrap_in_directory: false
+
+    files:
+      - none*
 
     # use zip for windows archives
     format_overrides:
