@@ -7,14 +7,14 @@
 
 version: 2
 
-project_name: modmerger
+project_name: modmerge
 
 before:
   hooks:
     - go mod tidy
 
 builds:
-  - binary: modmerger
+  - binary: modmerge
     env:
       - CGO_ENABLED=0
     goos:
@@ -48,7 +48,7 @@ archives:
 
 universal_binaries:
   - replace: true
-    name_template: "modmerger"
+    name_template: "modmerge"
 
 checksum:
   name_template: "checksums.txt"
